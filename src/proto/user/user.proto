@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package user;
+
+message IsUserExistByLoginOrEmailRequest {
+  optional string login = 1;
+  optional string email = 2;
+  optional string some = 3;
+}
+
+message IsUserExistByLoginOrEmailResponse {
+  bool result = 1;
+}
+
+service UserService {
+  rpc isUserExistByLoginOrEmail(IsUserExistByLoginOrEmailRequest) returns (IsUserExistByLoginOrEmailResponse);
+}
