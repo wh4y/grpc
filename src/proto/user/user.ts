@@ -8,7 +8,6 @@ import { Metadata } from '@grpc/grpc-js';
                 export interface IsUserExistByLoginOrEmailRequest {
                   login?: string;
                   email?: string;
-                  some?: string;
                 }
                 export interface IsUserExistByLoginOrEmailResponse {
                   result?: boolean;

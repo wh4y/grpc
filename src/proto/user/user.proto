@@ -5,7 +5,6 @@ package user;
 message IsUserExistByLoginOrEmailRequest {
   optional string login = 1;
   optional string email = 2;
-  optional string some = 3;
 }
 
 message IsUserExistByLoginOrEmailResponse {
