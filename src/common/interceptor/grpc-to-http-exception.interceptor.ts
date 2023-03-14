@@ -1,7 +1,7 @@
 import { CallHandler, ExecutionContext, Injectable, NestInterceptor } from '@nestjs/common';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
-import { getHttpExceptionFromGrpc } from '@libs/grpc/common';
+import { getHttpExceptionFromGrpc } from './../utils/get-http-exception-from-grpc.util';
 
 @Injectable()
 export class GrpcToHttpInterceptor implements NestInterceptor {
