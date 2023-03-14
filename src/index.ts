@@ -1,3 +1,4 @@
 // created from 'create-ts-index'
 
-export * from './proto';
+export * from './common';
+export * from './user';
